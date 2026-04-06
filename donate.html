@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donate & Volunteer | KidsInAITech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a class="logo" href="index.html">&#129302; KidsInAITech</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="donate.html">Donate</a></li>
+    </ul>
+</nav>
+
+<section id="hero">
+    <h1>Support KidsInAITech</h1>
+    <p>Your donation or volunteer time helps us bring AI and coding education to kids who need it most.</p>
+</section>
+
+<div id="wrapper">
+
+    <!-- Donate Section -->
+    <h2 class="section-title">Make a Donation</h2>
+
+    <div class="donate-section">
+        <h2>Why Donate?</h2>
+        <p>KidsInAITech is a nonprofit organization. Every dollar goes directly toward program materials, instructor training, and scholarship spots for kids who can't afford to participate.</p>
+        <p>Your support helps us reach more kids, run more camps, and grow the next generation of innovators.</p>
+    </div>
+
+    <form action="https://webdevbasics.net/scripts/demo.php" method="post" style="margin-bottom: 50px;">
+
+        <fieldset>
+            <legend>Donor Information</legend>
+
+            <label for="donorname">Full Name:</label>
+            <input type="text" name="donorname" id="donorname">
+
+            <label for="donoremail">Email Address:</label>
+            <input type="email" name="donoremail" id="donoremail">
+        </fieldset>
+
+        <fieldset>
+            <legend>Donation Details</legend>
+
+            <label for="amount">Donation Amount:</label>
+            <select name="amount" id="amount">
+                <option value="">-- Select an Amount --</option>
+                <option value="10">$10</option>
+                <option value="25">$25</option>
+                <option value="50">$50</option>
+                <option value="100">$100</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="frequency">Frequency:</label>
+            <select name="frequency" id="frequency">
+                <option value="once">One-time</option>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+            </select>
+
+            <label for="donormessage">Leave a Message (optional):</label>
+            <textarea name="donormessage" id="donormessage" rows="3"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Donate Now">
+
+    </form>
+
+    <!-- Volunteer Section -->
+    <h2 class="section-title">Volunteer With Us</h2>
+
+    <div class="donate-section">
+        <h2>Why Volunteer?</h2>
+        <p>We're always looking for passionate people to help instruct workshops, assist at camps, or support our community outreach. No teaching degree required — just enthusiasm for tech and kids.</p>
+    </div>
+
+    <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+
+        <fieldset>
+            <legend>Volunteer Information</legend>
+
+            <label for="volname">Full Name:</label>
+            <input type="text" name="volname" id="volname">
+
+            <label for="volemail">Email Address:</label>
+            <input type="email" name="volemail" id="volemail">
+
+            <label for="volphone">Phone Number:</label>
+            <input type="tel" name="volphone" id="volphone">
+        </fieldset>
+
+        <fieldset>
+            <legend>Availability &amp; Interests</legend>
+
+            <label>I am available to help with: (check all that apply)</label>
+
+            <input type="checkbox" name="help" value="camps" id="camps">
+            <label for="camps" style="display:inline; font-weight:normal;">Summer Camps</label><br>
+
+            <input type="checkbox" name="help" value="afterschool" id="afterschool">
+            <label for="afterschool" style="display:inline; font-weight:normal;">After-School Programs</label><br>
+
+            <input type="checkbox" name="help" value="workshops" id="workshops">
+            <label for="workshops" style="display:inline; font-weight:normal;">Workshops</label><br>
+
+            <input type="checkbox" name="help" value="outreach" id="outreach">
+            <label for="outreach" style="display:inline; font-weight:normal;">Community Outreach</label><br>
+
+            <label for="volnotes" style="margin-top: 14px;">Tell us a bit about yourself:</label>
+            <textarea name="volnotes" id="volnotes" rows="4"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit Volunteer Form">
+
+    </form>
+
+</div>
+
+<footer>
+    <p>&#169; 2026 KidsInAITech | Kennedy Scharfman, Andrew Bricker, Nathan Daniel</p>
+</footer>
+
+</body>
+</html>

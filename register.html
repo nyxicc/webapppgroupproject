@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register | KidsInAITech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a class="logo" href="index.html">&#129302; KidsInAITech</a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="donate.html">Donate</a></li>
+    </ul>
+</nav>
+
+<section id="hero">
+    <h1>Sign Up Today</h1>
+    <p>Fill out the form below to register your child for a program. We'll follow up with confirmation and next steps.</p>
+</section>
+
+<div id="wrapper">
+
+    <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+
+        <fieldset>
+            <legend>Parent / Guardian Information</legend>
+
+            <label for="parentname">Full Name:</label>
+            <input type="text" name="parentname" id="parentname">
+
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone">
+        </fieldset>
+
+        <fieldset>
+            <legend>Child Information</legend>
+
+            <label for="childname">Child's Full Name:</label>
+            <input type="text" name="childname" id="childname">
+
+            <label for="age">Child's Age:</label>
+            <input type="number" name="age" id="age" min="6" max="12">
+        </fieldset>
+
+        <fieldset>
+            <legend>Program Selection</legend>
+
+            <label for="program">Select a Program:</label>
+            <select name="program" id="program">
+                <option value="">-- Choose a Program --</option>
+                <optgroup label="Summer Camps">
+                    <option value="ai-explorers">AI Explorers Camp (Ages 6-8)</option>
+                    <option value="code-builders">Code Builders Camp (Ages 9-12)</option>
+                </optgroup>
+                <optgroup label="After-School Programs">
+                    <option value="tech-stars">Tech Stars (Ages 6-9)</option>
+                    <option value="ai-lab">AI Lab (Ages 10-12)</option>
+                </optgroup>
+                <optgroup label="Workshops">
+                    <option value="robotics">Robotics Day (Ages 7-12)</option>
+                    <option value="game-design">Game Design Weekend (Ages 9-12)</option>
+                </optgroup>
+            </select>
+
+            <label for="experience">Prior Experience:</label>
+            <select name="experience" id="experience">
+                <option value="none">No experience</option>
+                <option value="some">Some coding or tech exposure</option>
+                <option value="moderate">Moderate experience</option>
+            </select>
+
+            <label for="notes">Additional Notes or Questions:</label>
+            <textarea name="notes" id="notes" rows="4"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit Registration">
+
+    </form>
+
+</div>
+
+<footer>
+    <p>&#169; 2026 KidsInAITech | Kennedy Scharfman, Andrew Bricker, Nathan Daniel</p>
+</footer>
+
+</body>
+</html>
