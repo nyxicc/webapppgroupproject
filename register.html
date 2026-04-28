@@ -30,30 +30,30 @@
             <legend>Parent / Guardian Information</legend>
 
             <label for="parentname">Full Name:</label>
-            <input type="text" name="parentname" id="parentname">
+            <input type="text" name="parentname" id="parentname" required>
 
             <label for="email">Email Address:</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
 
             <label for="phone">Phone Number:</label>
-            <input type="tel" name="phone" id="phone">
+            <input type="tel" name="phone" id="phone" required>
         </fieldset>
 
         <fieldset>
             <legend>Child Information</legend>
 
             <label for="childname">Child's Full Name:</label>
-            <input type="text" name="childname" id="childname">
+            <input type="text" name="childname" id="childname" required>
 
             <label for="age">Child's Age:</label>
-            <input type="number" name="age" id="age" min="6" max="12">
+            <input type="number" name="age" id="age" min="6" max="12" required>
         </fieldset>
 
         <fieldset>
             <legend>Program Selection</legend>
 
             <label for="program">Select a Program:</label>
-            <select name="program" id="program">
+            <select name="program" id="program" required>
                 <option value="">-- Choose a Program --</option>
                 <optgroup label="Summer Camps">
                     <option value="ai-explorers">AI Explorers Camp (Ages 6-8)</option>
